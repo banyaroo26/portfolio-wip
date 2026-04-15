@@ -1,0 +1,70 @@
+.darkmode {
+  background-color: #121212;
+  color: #E5E7EB;
+}
+
+.darkmode-secondary {
+  color: #6B7280;
+}
+
+.profile-picture {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .profile-picture {
+    width: 200px;
+  }
+}
+
+.socialmedia-icon {
+  transition: all 0.2s ease-in !important;
+  font-size: 1.25rem !important;
+}
+@media (max-width: 768px) {
+  .socialmedia-icon {
+    font-size: 1.125rem !important;
+  }
+}
+.socialmedia-icon i {
+  color: #6B7280;
+  transition: color 0.2s ease-in !important;
+}
+.socialmedia-icon:hover {
+  transform: translateY(-4px);
+}
+.socialmedia-icon:hover i {
+  color: #E5E7EB;
+}
+
+.university-logo {
+  width: 75px;
+  height: auto;
+}
+
+.header-underline {
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, #6B7280, #121212) 1;
+  width: 50%;
+}
+
+.name {
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 20px;
+  }
+}
+
+.titles {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .titles {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
