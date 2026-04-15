@@ -8,13 +8,13 @@
 }
 
 .profile-picture {
-  width: 250px;
+  width: 200px;
   height: auto;
   border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
   .profile-picture {
-    width: 200px;
+    width: 160px;
   }
 }
 
@@ -43,7 +43,15 @@
   height: auto;
 }
 
-.header-underline {
+.header {
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 20px;
+  }
+}
+.header {
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to right, #6B7280, #121212) 1;
   width: 50%;
@@ -64,6 +72,28 @@
 @media screen and (max-width: 768px) {
   .titles {
     font-size: 16px;
+  }
+}
+
+.institution {
+  font-size: 16px;
+  font-weight: 500;
+  color: #E5E7EB;
+}
+@media screen and (max-width: 768px) {
+  .institution {
+    font-size: 14px;
+  }
+}
+
+.degree {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6B7280;
+}
+@media screen and (max-width: 768px) {
+  .degree {
+    font-size: 12px;
   }
 }
 
