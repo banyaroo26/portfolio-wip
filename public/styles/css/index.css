@@ -158,4 +158,44 @@
   text-align: justify;
 }
 
+.technology-slot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background-color: #1E1E1E;
+  width: 150px;
+  height: auto;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: all 0.2s ease-in !important;
+}
+.technology-slot img {
+  width: 25px;
+  height: auto;
+}
+.technology-slot span {
+  color: #C9CDD4;
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .technology-slot span {
+    font-size: 10px;
+  }
+}
+.technology-slot span {
+  font-weight: bolder;
+  margin-left: 10px;
+}
+.technology-slot:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+.technology-slot:hover img {
+  transition: none !important;
+}
+.technology-slot:hover span {
+  transition: none !important;
+}
+
 /*# sourceMappingURL=index.css.map */

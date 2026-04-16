@@ -44,6 +44,14 @@ $text-tertiary-darkmode: #C9CDD4;
     }
 }
 
+@mixin type5 {
+    font-size: 12px;
+
+    @media screen and (max-width: 768px) {    
+        font-size: 10px;
+    }
+}
+
 .profile-picture {
     width: 200px;
     height: auto;
@@ -136,4 +144,44 @@ $text-tertiary-darkmode: #C9CDD4;
 .publications {
     @include type4;
     text-align: justify;
+}
+
+.technology-slot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+    background-color: #1E1E1E;
+    width: 150px;
+    height: auto;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    transition: all 0.2s ease-in;
+
+    img {
+        width: 25px;
+        height: auto;
+    }
+    
+    span {
+        color: $text-tertiary-darkmode;
+        @include type5;
+        font-weight: bolder;
+        margin-left: 10px;
+    }
+
+    &:hover {
+        transform: translateY(-2px) scale(1.05);
+
+        img {
+            transition: none !important;
+        }
+
+        span {
+            transition: none !important;
+        }
+    }
 }
