@@ -146,4 +146,16 @@
   }
 }
 
+.publications {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .publications {
+    font-size: 12px;
+  }
+}
+.publications {
+  text-align: justify;
+}
+
 /*# sourceMappingURL=index.css.map */

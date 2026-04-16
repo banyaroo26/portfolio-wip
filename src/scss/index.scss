@@ -132,3 +132,8 @@ $text-tertiary-darkmode: #C9CDD4;
         }
     }
 }
+
+.publications {
+    @include type4;
+    text-align: justify;
+}
