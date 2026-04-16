@@ -75,25 +75,74 @@
   }
 }
 
-.institution {
+.institution, .employer {
   font-size: 16px;
-  font-weight: 500;
-  color: #E5E7EB;
 }
 @media screen and (max-width: 768px) {
-  .institution {
+  .institution, .employer {
     font-size: 14px;
   }
+}
+.institution, .employer {
+  font-weight: 500;
+  color: #E5E7EB;
 }
 
 .degree {
   font-size: 14px;
-  font-weight: 400;
-  color: #6B7280;
 }
 @media screen and (max-width: 768px) {
   .degree {
     font-size: 12px;
+  }
+}
+.degree {
+  font-weight: 400;
+  color: #6B7280;
+}
+
+.job-title {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .job-title {
+    font-size: 14px;
+  }
+}
+.job-title {
+  font-weight: 400;
+  color: #6B7280;
+}
+
+.job-duration {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .job-duration {
+    font-size: 12px;
+  }
+}
+.job-duration {
+  color: #6B7280;
+}
+
+.job-description li {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .job-description li {
+    font-size: 12px;
+  }
+}
+.job-description li {
+  color: #C9CDD4;
+  text-align: justify;
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .job-description li {
+    margin-bottom: 5px;
+    margin-left: 0px;
   }
 }
 

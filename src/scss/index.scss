@@ -1,6 +1,7 @@
 $background-darkmode: #121212;
 $text-primary-darkmode: #E5E7EB;
 $text-secondary-darkmode: #6B7280;
+$text-tertiary-darkmode: #C9CDD4;
 
 .darkmode {
     background-color: $background-darkmode;
@@ -16,6 +17,30 @@ $text-secondary-darkmode: #6B7280;
 
     @media screen and (max-width: 768px) {    
         font-size: 20px;
+    }
+}
+
+@mixin type2 {
+    font-size: 18px;
+
+    @media screen and (max-width: 768px) {    
+        font-size: 16px;
+    }
+}
+
+@mixin type3 {
+    font-size: 16px;
+
+    @media screen and (max-width: 768px) {    
+        font-size: 14px;
+    }
+}
+
+@mixin type4 {
+    font-size: 14px;
+
+    @media screen and (max-width: 768px) {    
+        font-size: 12px;
     }
 }
 
@@ -68,29 +93,42 @@ $text-secondary-darkmode: #6B7280;
 }
 
 .titles {
-    font-size: 18px;
-
-    @media screen and (max-width: 768px) {    
-        font-size: 16px;
-    }
+    @include type2;
 }
 
-.institution {
-    font-size: 16px;
+.institution, .employer {
+    @include type3;
     font-weight: 500;
     color: $text-primary-darkmode;
-
-    @media screen and (max-width: 768px) {    
-        font-size: 14px;
-    }
 }
 
 .degree {
-    font-size: 14px;
+    @include type4;
     font-weight: 400;
     color: $text-secondary-darkmode;
+}
 
-    @media screen and (max-width: 768px) {    
-        font-size: 12px;
+.job-title {
+    @include type3;
+    font-weight: 400;
+    color: $text-secondary-darkmode;
+}
+
+.job-duration {
+    @include type4;
+    color: $text-secondary-darkmode;
+}
+
+.job-description {
+    li {
+        @include type4;
+        color: $text-tertiary-darkmode;
+        text-align: justify;
+        margin-left: 10px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 5px;
+            margin-left: 0px;
+        }
     }
 }
