@@ -75,16 +75,17 @@
   }
 }
 
-.institution, .employer {
+.institution, .employer, .project-name {
   font-size: 16px;
 }
 @media screen and (max-width: 768px) {
-  .institution, .employer {
+  .institution, .employer, .project-name {
     font-size: 14px;
   }
 }
-.institution, .employer {
+.institution, .employer, .project-name {
   font-weight: 500;
+  text-align: justify;
   color: #E5E7EB;
 }
 
@@ -169,7 +170,7 @@
   padding: 10px 15px;
   border: 1px solid transparent;
   border-radius: 10px;
-  transition: all 0.2s ease-in !important;
+  transition: all 0.2s ease-in;
 }
 .technology-slot img {
   width: 25px;
@@ -196,6 +197,201 @@
 }
 .technology-slot:hover span {
   transition: none !important;
+}
+
+.project {
+  width: 400px;
+  margin-bottom: 20px;
+}
+.project img {
+  width: 400px;
+  height: 250px;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid rgba(229, 231, 235, 0.08);
+}
+
+.project-description {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .project-description {
+    font-size: 12px;
+  }
+}
+.project-description {
+  color: #C9CDD4;
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.project-link {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .project-link {
+    font-size: 12px;
+  }
+}
+.project-link {
+  color: #E5E7EB;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-decoration: none !important;
+}
+.project-link i {
+  color: #E5E7EB;
+}
+.project-link:hover {
+  text-decoration: none !important;
+  color: #E5E7EB !important;
+}
+.project-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: solid 2.5px #E5E7EB;
+  transition: width 0.3s ease-in;
+  margin-top: 3px;
+}
+.project-link:hover::after {
+  width: 100%;
+}
+
+.tags-wrapper {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.computer-vision {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #93C5FD;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-top: 6px;
+  line-height: 1;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.computer-vision:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.data-collection {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #6EE7B7;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-top: 6px;
+  line-height: 1;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.data-collection:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.natural-language-processing {
+  background-color: rgba(139, 92, 246, 0.15);
+  color: #C4B5FD;
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-top: 6px;
+  line-height: 1;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.natural-language-processing:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.python {
+  background-color: rgba(20, 184, 166, 0.15);
+  color: #5EEAD4;
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-top: 6px;
+  line-height: 1;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.python:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.framework {
+  background-color: rgba(107, 114, 128, 0.2);
+  color: #D1D5DB;
+  border: 1px solid rgba(107, 114, 128, 0.35);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-top: 6px;
+  line-height: 1;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.framework:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.web-stack {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #FCD34D;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-top: 6px;
+  line-height: 1;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.web-stack:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

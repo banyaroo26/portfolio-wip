@@ -98,12 +98,105 @@
             </div>
         </section>
         <section class="container w-100 mt-5">
-            <div class="d-flex flex-column align-items-start justify-content-center" id="work_experience">
+            <div class="d-flex flex-column align-items-start justify-content-center" id="publications">
                 <p class="fw-semibold pb-1 mb-4 header"> Publications </p>
                 <p class="publications mb-0"> B. Oo, H. M. Mo, and H. M. S. Naing, "A Study on Multilingual Burmese Translation with a Fine
                     Tuned NLLB Model," 23rd IEEE International Conference on Computer Applications (IEEE-ICCA),
                     Yangon, Myanmar, Feb. 26, 2026. <span class="job-duration"> [Publication Pending] </span>
                 </p>
+            </div>
+        </section>
+        <section class="container w-100 mt-5">
+            <div class="d-flex flex-column align-items-start justify-content-center" id="projects">
+                <p class="fw-semibold pb-1 mb-4 header"> Projects </p>
+                <section class="container py-2 mt-md-2 mt-2">
+                    <div class="d-flex flex-row align-items-start justify-content-around gap-5">
+                        <div class="project">
+                            <img src="./img/projects/mcq.png">
+                            <p class="project-name mb-0 mt-1"> MCQ Generation using T5 & Distractor Generation using Retrieval-Augmented Generation </p>
+                            <div class="d-flex flex-wrap align-items-center justify-content-start gap-2 tags-wrapper"> 
+                                <div class="d-inline natural-language-processing"> Question Generation </div>
+                                <div class="d-inline natural-language-processing"> NLP </div>
+                                <div class="d-inline natural-language-processing"> LLM </div>
+                                <div class="d-inline natural-language-processing"> RAG </div>
+                                <div class="d-inline framework"> HF Transformers </div>
+                            </div>
+                            <p class="project-description mt-2"> 
+                                A multiple-choice question generation system using a T5 Transformer model combined with retrieval-augmented generation for 
+                                distractor generation. Fine-tuned with SciQ corpus and a custom domain-specific corpus created from a Cambridge Biology textbook and constructed a 
+                                vector-based retrieval pipeline to generate semantically relevant distractors. 
+                            </p>
+                            <div class="d-flex flex-row align-items-end justify-content-start gap-4 p-absolute left-0 bottom-0 w-100">
+                                <a class="project-link" href="https://huggingface.co/banyaroo/t5-paraphrased-question-generation">
+                                    <i class="fa-brands fa-hugging-face"></i> View
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="./img/projects/dataset.png">
+                            <p class="project-name mb-0 mt-1"> Air-written Burmese Alphabet and Numeral Dataset </p>
+                            <div class="d-flex flex-wrap align-items-center justify-content-start gap-2 tags-wrapper"> 
+                                <div class="d-inline computer-vision"> Computer Vision </div>
+                                <div class="d-inline data-collection"> Dataset </div>
+                                <div class="d-inline python"> Python </div>
+                                <div class="d-inline framework"> OpenCV </div>
+                            </div>
+                            <p class="project-description"> 
+                                This dataset was created for an OCR system that can recognize air-written Burmese symbols. 
+                                It includes all Burmese alphabets and numerals recorded in 83×84 resolution, with 30 images per character. 
+                            </p>
+                            <div class="d-flex flex-row align-items-end justify-content-start gap-4 p-absolute left-0 bottom-0 w-100">
+                                <a class="project-link" href="https://github.com/banyaroo26/air-written-Burmese-alphabet-image-dataset">
+                                    <i class="fa-brands fa-github"></i> View
+                                </a>
+                                <a class="project-link" href="https://www.kaggle.com/datasets/banyaroo26/air-written-burmese-alphabets">
+                                    <i class="fa-brands fa-kaggle"></i> View
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-start justify-content-around gap-5">
+                        <div class="project">
+                            <img src="./img/projects/ocr.png">
+                            <p class="project-name mb-0 mt-1"> Burmese Alphabet and Numeral OCR </p>
+                            <div class="d-flex flex-wrap align-items-center justify-content-start gap-2 tags-wrapper"> 
+                                <div class="d-inline computer-vision"> Computer Vision </div>
+                                <div class="d-inline computer-vision"> OCR </div>
+                                <div class="d-inline python"> Python </div>
+                                <div class="d-inline framework"> OpenCV </div>
+                            </div>
+                            <p class="project-description"> 
+                                An OCR system that recognizes air-written Burmese alphabets and numerals using 
+                                webcam-based finger tracking and machine learning. Built a real-time model predicting Burmese symbols 
+                                from gestures.
+                            </p>
+                            <div class="d-flex flex-row align-items-end justify-content-start gap-4 p-absolute left-0 bottom-0 w-100">
+                                <a class="project-link" href="https://github.com/banyaroo26/Burmese-air-writing-ocr">
+                                    <i class="fa-brands fa-github"></i> View
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="./img/projects/sis.png">
+                            <p class="project-name mb-0 mt-1"> Student Information System (SIS) </p>
+                            <div class="d-flex flex-wrap align-items-center justify-content-start gap-2 tags-wrapper"> 
+                                <div class="d-inline web-stack"> Backend </div>
+                                <div class="d-inline python"> Python </div>
+                                <div class="d-inline framework"> Flask </div>
+                                <div class="d-inline framework"> Bootstrap </div>
+                            </div>
+                            <p class="project-description"> 
+                                A server-side rendered web application built with Flask. It provides functionalities like assigning students and teachers 
+                                to class sections, calculating marks, managing courses, and generating academic records.
+                            </p>
+                            <div class="d-flex flex-row align-items-end justify-content-start gap-4 p-absolute left-0 bottom-0 w-100">
+                                <a class="project-link" href="https://github.com/banyaroo26/Burmese-air-writing-ocr">
+                                    <i class="fa-solid fa-link"></i> View
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
         <!--
