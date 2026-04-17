@@ -104,10 +104,9 @@ $text-tertiary-darkmode: #C9CDD4;
     @include type2;
 }
 
-.institution, .employer, .project-name {
+.institution, .employer {
     @include type3;
     font-weight: 500;
-    text-align: justify;
     color: $text-primary-darkmode;
 }
 
@@ -207,6 +206,13 @@ $text-tertiary-darkmode: #C9CDD4;
             height: auto;
         }
     }
+}
+
+.project-name {
+    @include type3;
+    font-weight: 500;
+    text-align: justify;
+    color: $text-primary-darkmode;
 }
 
 .project-description {
